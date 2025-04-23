@@ -40,6 +40,7 @@ Key screens:
 4. Detox Goals and Challenges
 5. Profile hub (Relaxation suggestions, family sync settings, profile settings, notification settings) 
 
+The video to show case the prototype can be found at Prototype Showcase.mov
 
 
 ### Test
