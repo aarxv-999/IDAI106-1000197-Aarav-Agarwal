@@ -1,10 +1,26 @@
 # Made by: Aarav Agarwal, IBCP-XI
 ## Summative Assessment 6
 
-### Overview
+### Project Overview
 
-The scenario that I am addressing via this project is Scenario 1: Designing‬‭ Social‬‭ Media‬‭ Detox‬‭ Tracker‬‭ App‬‭ prototype‬‭ using‬‭ Design‬ Thinking‬‭. MindSpace is a mobile app which is designed for young users (such as students, teenagers, and working professionals) who face struggles with excessive screen time and social media usage. The app aids them in tracking, limiting, and reflecting on their social media activity, in a way that motivates them, not restricts. I used the design thinking framework to create this app with empathy, simplicity and a purpose, to turn insights from real users into a prototype to support digital wellness. <br/>
+This project is an interactive Streamlit dashboard built for the Summative Assessment of Mathematics for AI-II. <br/>
+The goal is to analyze hospital inpatient discharge data and provide actionable insights for hospital administrators, clinicians, and operations managers. <br/>
 
+The dashboard allows users to explore:
+- Length of Stay (LOS) trends
+- Hospital charges distribution
+- High-utilization departments
+- Severity-based cost patterns
+- Diagnosis-related LOS differences
+- Patient demographics and payment types
+- County and facility performance patterns
+
+The dashboard is fully interactive and built using:
+- Python (pandas, numpy)
+- Plotly / Matplotlib
+- Streamlit
+- GitHub + Streamlit Cloud Deployment
+  
 ## Design Thinking Process
 
 ### Empathize & Define
