@@ -21,65 +21,57 @@ The dashboard is fully interactive and built using:
 - Streamlit
 - GitHub + Streamlit Cloud Deployment
   
-## Design Thinking Process
+### Features Included
+This dashboard satisfies the Summative Assessment requirements with 5+ interactive visualizations:
+1. Bar Chart — Average Length of Stay per Diagnosis
+2. Boxplot — Total Charges segmented by Severity
+3. Heatmap — Average Length of Stay by Facility × County
+4. Pie Chart — Patient distribution by Payment Type
+5. Histogram — Distribution of Length of Stay
 
-### Empathize & Define
+### Running the Project Locally
+1. Clone the repository
+2. Create and activate a virtual environment
+3. Install dependencies using the requirements.txt
+4. Place your dataset in the data/ folder
+5. Run the app using:
+streamlit run app.py
 
-1. Conducted surveys via Google Forms with more than 10 users to better understand the emotional triggers and struggles with screen time
-2. Created empathy maps and user personas to define the pain points, needs and individual motivations.
-3. Survey insights and empathy maps can be found in surveyresults.md and empathymap.md
+This will launch the dashboard locally on your browser.
 
-Problem Statement: "How might we design a screen time tracker app which helps younger users decrease their social media usage in a way that feels motivating, guilt-free, and fun without forcing them to quit entirely?"
+### Deployment Instructions (Streamlit Cloud)
+1. Push your repo to GitHub
+2. Visit Streamlit Cloud and select Deploy an App
+3. Connect GitHub → choose your repository
+4. Set app.py as the startup file
+5. Deploy
+Streamlit will build the app and provide a public URL.
 
-### Ideate 
+### Data Preprocessing Performed
+The preprocessing pipeline includes:
+- Handling missing values in LOS, charges, severity
+- Converting diagnosis codes to readable labels (where applicable)
+- Converting charges from string → float
+- Creating age groups (0–20, 21–40, 41–60, 60+)
+- Standardizing category columns (county, facility, gender, race)
+- Removing outliers in length of stay and charges
+- Creating grouped summaries needed for visuals
+- Creating pivot tables for heatmaps
 
-Brainstormed features like
-1. Visual progress tracking
-2. Goal setting with custom time limits
-3. Daily detox challenges
-4. Rewards system (coins and badges)
-5. Relaxation suggestion engine
-6. Family sync features
+### Exploratory Data Analysis (EDA)
+The following questions were answered using EDA:
+- Which diagnosis codes lead to longest hospital stays?
+- Which age groups incur the highest charges?
+- Do higher-severity patients stay longer or cost more?
+- Are specific counties or facilities responsible for most long-stay cases?
+- How do different payment types influence total billing?
+- EDA includes statistical summaries, grouped metrics, trends, histograms, boxplots, and heatmaps.
 
-Final feature sets and wireframes are available in wireframe.md
-
- 
-
-### Prototype 
-
-Created an aesthetic high fidelity prototype with intuitive, minimalistic & on point screens. All screens can be seen in allscreens.pdf 
-
-Key screens: 
-1. Login & sign up
-2. Home dashboard
-3. Tracking & Analytics
-4. Detox Goals and Challenges
-5. Profile hub (Relaxation suggestions, family sync settings, profile settings, notification settings) 
-
-The video to show case the prototype can be found at Prototype Showcase.mov
-
-
-### Test
-
-Shared the prototype with users to get some feedback. <br/> 
-Collected user input via google forms and made improvements based on the suggestions (e.g., animationm fixes, button fixes, etc.) <br/>
-
-All feedback details and the fixes can be found in feedbackform.md
-
-### Final prototype link: https://www.figma.com/proto/vOFiTWyiDvOsq7KiTYPYsZ/Untitled?page-id=0%3A1&node-id=4-838&p=f&viewport=245%2C-74%2C0.24&t=IKBLNwAcX8CpjNfw-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=4%3A838
-### Final wireframe link: https://www.figma.com/design/vOFiTWyiDvOsq7KiTYPYsZ/Untitled?node-id=0-1&t=MoT8Hv36HiwQVLF0-1
-
-## Tools Used 
-
-Creating designs, prototypes & wireframes: Figma 
-Collecting feedback and surveys for initial ideation: Google Forms 
-Documentation and repository: GitHub 
-
+### Live Streamlit link: https://iadai102-1000197-aarav-agarwal-n49gmgfujgnf7p3pqd5efs.streamlit.app/
 
 ### Citations <br/>
 https://chatgpt.com/ <br/>
-https://forms.google.com <br/>
-https://figma.com <br/>
-https://www.interaction-design.org/literature/article/personas-why-and-how-you-should-use-them?srsltid=AfmBOoo9Kroot4gBDFXd7BmOFK9O_OQ57XGzstERENHQCeljY5uxH6VX <br/>
+https://docs.streamlit.io/develop/api-reference/status <br/>
+https://blog.streamlit.io/improving-healthcare-management-with-streamlit/ <br/>
 
 
